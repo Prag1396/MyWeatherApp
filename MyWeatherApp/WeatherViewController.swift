@@ -18,11 +18,17 @@ class WeatherViewController: UIViewController, UITableViewDelegate, UITableViewD
     @IBOutlet weak var currentWeatherLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
+    var currWeatherObject: currentWeather!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         tableView.delegate = self
         tableView.dataSource = self
+        currWeatherObject = currentWeather()
+        currWeatherObject.downloadWeatherDetails {
+            self.updateMainUI()
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,6 +49,14 @@ class WeatherViewController: UIViewController, UITableViewDelegate, UITableViewD
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "WeatherData", for: indexPath)
         return cell
+    }
+    
+    func updateMainUI() {
+        dateLabel.text = currWeatherObject.date
+        currentTempLabel.text = "\(currWeatherObject.currentTemp)"
+        currentWeatherLabel.text = currWeatherObject.weatherType
+        locationLabel.text = currWeatherObject.cityName
+        currentWeatherIcon.image = UIImage(named: currWeatherObject.weatherType)
     }
 }
 

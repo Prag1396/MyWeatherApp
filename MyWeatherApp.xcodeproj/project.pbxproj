@@ -10,6 +10,8 @@
 		6420885B3505E8300D5CBAD7 /* Pods_MyWeatherAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7C8C970CE398D461B9C1B6F /* Pods_MyWeatherAppUITests.framework */; };
 		68A459CEC58F0A4E8107A681 /* Pods_MyWeatherAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B94691ACA51D392416443786 /* Pods_MyWeatherAppTests.framework */; };
 		6ACD83B2FDE500936C1BA252 /* Pods_MyWeatherApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12A18A4CBCCDBD8CD661F767 /* Pods_MyWeatherApp.framework */; };
+		DB289D851F195602002830B7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB289D841F195602002830B7 /* Constants.swift */; };
+		DB289D871F195885002830B7 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB289D861F195885002830B7 /* CurrentWeather.swift */; };
 		DBDB24071F1827F2006084C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDB24061F1827F2006084C2 /* AppDelegate.swift */; };
 		DBDB24091F1827F2006084C2 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDB24081F1827F2006084C2 /* WeatherViewController.swift */; };
 		DBDB240C1F1827F2006084C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBDB240A1F1827F2006084C2 /* Main.storyboard */; };
@@ -45,6 +47,8 @@
 		93AA011D1C87C62D12C2DE57 /* Pods-MyWeatherAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWeatherAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyWeatherAppUITests/Pods-MyWeatherAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B94691ACA51D392416443786 /* Pods_MyWeatherAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyWeatherAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2D6F0CF664489999AAC2531 /* Pods-MyWeatherAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWeatherAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyWeatherAppTests/Pods-MyWeatherAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		DB289D841F195602002830B7 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DB289D861F195885002830B7 /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
 		DBDB24031F1827F2006084C2 /* MyWeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBDB24061F1827F2006084C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBDB24081F1827F2006084C2 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
@@ -178,6 +182,8 @@
 		DBDB24351F1829C9006084C2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DB289D841F195602002830B7 /* Constants.swift */,
+				DB289D861F195885002830B7 /* CurrentWeather.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -475,6 +481,8 @@
 			files = (
 				DBDB24091F1827F2006084C2 /* WeatherViewController.swift in Sources */,
 				DBDB24071F1827F2006084C2 /* AppDelegate.swift in Sources */,
+				DB289D871F195885002830B7 /* CurrentWeather.swift in Sources */,
+				DB289D851F195602002830B7 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
