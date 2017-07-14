@@ -11,7 +11,7 @@
 		68A459CEC58F0A4E8107A681 /* Pods_MyWeatherAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B94691ACA51D392416443786 /* Pods_MyWeatherAppTests.framework */; };
 		6ACD83B2FDE500936C1BA252 /* Pods_MyWeatherApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12A18A4CBCCDBD8CD661F767 /* Pods_MyWeatherApp.framework */; };
 		DBDB24071F1827F2006084C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDB24061F1827F2006084C2 /* AppDelegate.swift */; };
-		DBDB24091F1827F2006084C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDB24081F1827F2006084C2 /* ViewController.swift */; };
+		DBDB24091F1827F2006084C2 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDB24081F1827F2006084C2 /* WeatherViewController.swift */; };
 		DBDB240C1F1827F2006084C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBDB240A1F1827F2006084C2 /* Main.storyboard */; };
 		DBDB240E1F1827F2006084C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBDB240D1F1827F2006084C2 /* Assets.xcassets */; };
 		DBDB24111F1827F2006084C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBDB240F1F1827F2006084C2 /* LaunchScreen.storyboard */; };
@@ -47,7 +47,7 @@
 		C2D6F0CF664489999AAC2531 /* Pods-MyWeatherAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWeatherAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyWeatherAppTests/Pods-MyWeatherAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		DBDB24031F1827F2006084C2 /* MyWeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBDB24061F1827F2006084C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DBDB24081F1827F2006084C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DBDB24081F1827F2006084C2 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		DBDB240B1F1827F2006084C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DBDB240D1F1827F2006084C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBDB24101F1827F2006084C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -170,7 +170,7 @@
 		DBDB24341F1829B7006084C2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				DBDB24081F1827F2006084C2 /* ViewController.swift */,
+				DBDB24081F1827F2006084C2 /* WeatherViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -473,7 +473,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBDB24091F1827F2006084C2 /* ViewController.swift in Sources */,
+				DBDB24091F1827F2006084C2 /* WeatherViewController.swift in Sources */,
 				DBDB24071F1827F2006084C2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -735,6 +735,7 @@
 				DBDB242D1F1827F3006084C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DBDB242E1F1827F3006084C2 /* Build configuration list for PBXNativeTarget "MyWeatherAppTests" */ = {
 			isa = XCConfigurationList;
@@ -743,6 +744,7 @@
 				DBDB24301F1827F3006084C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DBDB24311F1827F3006084C2 /* Build configuration list for PBXNativeTarget "MyWeatherAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -751,6 +753,7 @@
 				DBDB24331F1827F3006084C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
