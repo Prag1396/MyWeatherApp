@@ -50,7 +50,7 @@ class currentWeather {
     }
     
     
-    func downloadWeatherDetails(completed: downLoadComplete) {
+    func downloadWeatherDetails(completed: @escaping downLoadComplete) {
         
         //Alamofire download
         let currentWeatherURL = URL(string: CURRENT_WEATHER_URL)!
@@ -61,13 +61,11 @@ class currentWeather {
                 
                 if let name = dict["name"] as? String {
                     self._cityName = name.capitalized
-                    print(self._cityName)
                 }
                 
                 if let weather = dict["weather"] as? [Dictionary<String, AnyObject>] {
                     if let main = weather[0]["main"] as? String {
                         self._weatherType = main.capitalized
-                        print(self._weatherType)
                     }
                 }
              
@@ -77,15 +75,13 @@ class currentWeather {
                         let kelvinToFarenheitPreDivision = (currentTemp) * (9/5) - 459.67
                         let kelvinToFarenheit = Double(round(10 * kelvinToFarenheitPreDivision/10))
                         self._currentTemp = kelvinToFarenheit
-                        print(self._currentTemp)
                     }
                     
                 }
                 
             }
+            completed()
         }
-        completed()
-        
     }
     
 }
